@@ -54,7 +54,7 @@ From your command line:
 ### Install API In progress.. :construction:
 ```bash
 # Clone this repository
-
+$ git clone https://github.com/RafaelSSantiago/NLW-ecoleta.git
 
 # Go into the repository
 $ cd ecoleta
