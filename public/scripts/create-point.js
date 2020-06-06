@@ -55,9 +55,10 @@ document
 
 
 // itens de coleta
+// pegar todos li's
 const itemsToCollect = document.querySelectorAll(".items-grid li");
 
-for ( item of itemsToCollect ) {
+for (const item of itemsToCollect ) {
   item.addEventListener( "click" , handleSelectedItem );
 }
 
@@ -73,6 +74,8 @@ function handleSelectedItem(event){
   itemLi.classList.toggle("selected");
 
   const itemId = itemLi.dataset.id
+
+  console.log('ITEM ID: ', itemId)
 
   // verificar se existem intes selecionados. se sim
   // pegar os itens selecionados, tirar da seleção
@@ -99,6 +102,8 @@ const alreadySelected = selectedItems.findIndex(item => {
 selectedItems.push(itemId)
 
   }
+
+ // console.log('selectedItems: ', selectedItems)
 //atualizar o campo escondido com os intes selected
 collectedItems.value = selectedItems
 }
