@@ -41,6 +41,7 @@ This project was developed with the following technologies:
 - Css
 - Javascript
 - Node.js
+-Sql
 
 
 
@@ -65,6 +66,7 @@ $ cd ecoleta
 $ npm init -y
 % npm install nodemon
 % npm install nunjucks
+% npm install sql3
 ```
 
 ## 🤔 How to contribute
